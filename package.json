@@ -1,0 +1,35 @@
+{
+  "name": "jihou-bot",
+  "version": "0.1.0",
+  "description": "時間を適当に教えてくれるDiscordBotです",
+  "main": "src/main.ts",
+  "scripts": {
+    "test": "ts-node src/main.ts",
+    "build": "tsc -p .",
+    "start": "node build/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nenrinyear/jihou-bot.git"
+  },
+  "author": "nenrinyear",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nenrinyear/jihou-bot/issues"
+  },
+  "homepage": "https://github.com/nenrinyear/jihou-bot#readme",
+  "devDependencies": {
+    "globals": "^15.7.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
+  },
+  "dependencies": {
+    "@types/node": "^20.14.9",
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5"
+  },
+  "volta": {
+    "node": "20.15.0",
+    "npm": "10.8.1"
+  }
+}
