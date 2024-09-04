@@ -28,7 +28,7 @@ const handler = async (client: Client<true>) => {
         const second = now.getSeconds();
 
         if (
-            (hour === 0 || hour === 12)
+            (hour === 0 || hour === 6 || hour === 12 || hour === 18)
             && minute === 0
             && second === 0
         ) {
@@ -39,14 +39,14 @@ const handler = async (client: Client<true>) => {
                 await channel.send({
                     content: message,
                     files: [
-                        path.join(__dirname, 'src', 'nico.mp4'),
+                        path.join(__dirname, '../', 'nico.mp4'),
                     ],
                 });
             } else {
                 await channel.send(message);
             }
         }
-    }, 30 * 1000);
+    }, 1000);
 }
 
 export {
